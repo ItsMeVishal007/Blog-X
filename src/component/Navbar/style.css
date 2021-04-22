@@ -1,0 +1,40 @@
+.Navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 100px;
+}
+.SearchBar{
+  /* border: 2px solid red; */
+  width: 33%;
+}
+.SearchBar input{
+  margin-left: 20px;
+}
+.CenteredNavbar{
+  height: 100%;
+  display : flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 33%;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+.C-N-ul{
+  display : flex;
+  justify-content: space-evenly;
+ flex-direction: row;
+ text-decoration: none;
+ list-style: none;
+}
+.SM-Links{
+  display : flex;
+  justify-content: flex-end;
+  width: 33%;
+  /* border: 2px solid red; */
+}
+.SM-Links i{
+  margin-right: 20px;
+}
