@@ -1,15 +1,14 @@
 import React from 'react'
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import NewsCard from '../../../component/NewsCard/NewsCard.component'
 
 const BlogPages = (props) => {
   console.log(props)
   return (
     <div>
-      <Link to='/contact'>
-        BlogPages
-      </Link>
+      <NewsCard />
     </div>
   )
 }
 
-export default BlogPages
+export default BlogPages;

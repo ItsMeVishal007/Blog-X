@@ -1,0 +1,33 @@
+.NewsCard{
+  display: flex;
+  width: 300px;
+  height: 400px;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  /* border: 2px solid red; */
+}
+.image{
+  position: absolute;
+}
+.image img{
+  width: 100%;
+  transform: scale(1.5)
+}
+.otherCardstuff{
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.665);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+.otherCardstuff p{
+  color: white;
+  margin-bottom: 5px;
+}
