@@ -3,4 +3,6 @@
   padding: 1px;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: rgb(28, 28, 28);
 }
