@@ -3,10 +3,10 @@ import React from 'react';
 import Navbar from './component/Navbar/index';
 import { Route } from 'react-router-dom';
 import BlogPage from './Pages/BlogPages/main/Index';
-import Business from './Pages/BlogPages/business';
+import Business from './Pages/BlogPages/Buisness/Buisness';
 import Technology from './Pages/BlogPages/Technology/Technology'
 import Sports from './Pages/BlogPages/Sports/Sports';
-import Health from './Pages/BlogPages/health';
+import Health from './Pages/BlogPages/Health/Health';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import FilterData from './context/CreateContext';
@@ -18,7 +18,7 @@ function App() {
 
   React.useEffect(() => {
     const fetchData = async () => {
-      const urlData = await fetch('http://newsapi.org/v2/top-headlines?q=ai&apiKey=2bb66c0392d24e739d1904c868f011a6')
+      const urlData = await fetch(`http://newsapi.org/v2/top-headlines?q=ai&apiKey=${process.env.API_KEY}`)
       const result = await urlData.json()
       setApiData(result.articles);
     }
