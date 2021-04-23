@@ -1,12 +1,12 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const business = () => {
   return (
     <div>
-      <Link to='/contact'>
+      <NavLink activeClassName='active' to='/contact'>
         business
-      </Link>
+      </NavLink>
     </div>
   )
 }
