@@ -13,7 +13,7 @@
 }
 .NewsCard:hover{
   box-shadow: 0.2px 0.2px 10px rgb(228, 228, 228);
-  transform: scale(1.0009);
+  transform: scale(1.009);
 }
 .image img{
  height: 400px;

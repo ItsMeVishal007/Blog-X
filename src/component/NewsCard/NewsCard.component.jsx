@@ -1,9 +1,9 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './NewsCard.style.css';
 import Button from '../../component/Button/index';
 
-const NewsCard = ({ image, Title }) => {
-  
+const NewsCard = ({ image, Title, description }) => {
+
   return (
     <div
       className='NewsCard'
@@ -13,9 +13,10 @@ const NewsCard = ({ image, Title }) => {
       </div>
 
       <div className='otherCardstuff'>
-        <p>
-   {Title}
-      </p>
+        <h4>
+          {Title}
+        </h4>
+        <p>{description}</p>
         <Button
           className='button'
           text='Read Now'
