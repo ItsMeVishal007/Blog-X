@@ -5,7 +5,7 @@ import { Route} from 'react-router-dom';
 import BlogPage from './Pages/BlogPages/main/Index';
 import Business from './Pages/BlogPages/business';
 import Technology from './Pages/BlogPages/technology';
-import Sports from './Pages/BlogPages/sports';
+import Sports from './Pages/BlogPages/Sports/Sports';
 import Health from './Pages/BlogPages/health';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
