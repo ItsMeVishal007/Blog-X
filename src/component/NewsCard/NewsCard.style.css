@@ -1,32 +1,30 @@
 .NewsCard{
-  display: flex;
-  width: 300px;
-  height: 400px;
-  flex-direction: column;
+  display : flex;
+  flex-direction: row;
+  /* border: 0.1rem solid red; */
+  width: 100%;
+  height: 200px;
   overflow: hidden;
-  position: relative;
-  padding: 0;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 0px;  
+  box-shadow: 0.2px 0.2px 3px rgb(209, 209, 209);
+  border-radius: 7px;
+  transition: all 0.2s ease-in-out;
 }
-.image{
-  position: absolute;
+.NewsCard:hover{
+  box-shadow: 0.2px 0.2px 10px rgb(228, 228, 228);
+  transform: scale(1.0009);
 }
 .image img{
-  width: 100%;
-  transform: scale(1.8)
+ height: 400px;
+ width:400px;
+ transform: scale(1.2);
 }
 .otherCardstuff{
-  backdrop-filter: blur(3px);
-  background: rgba(0, 0, 0, 0.665);
-  position: absolute;
-  bottom: 0;
+padding: 10px;
+  display : flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
   text-align: center;
-  padding: 10px;
-  color: white;
-  width: 100%;
-}
-.otherCardstuff p{
-  color: white;
-  margin-bottom: 5px;
+  margin-left: 90px;
 }

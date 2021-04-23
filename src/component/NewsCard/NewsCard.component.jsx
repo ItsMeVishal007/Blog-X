@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './NewsCard.style.css';
 import Button from '../../component/Button/index';
 
-const NewsCard = ({ image, Title }) => {
+const NewsCard = ({ image, Title , description }) => {
   return (
     <div
       className='NewsCard'
@@ -12,9 +12,11 @@ const NewsCard = ({ image, Title }) => {
       </div>
 
       <div className='otherCardstuff'>
-        <p>
+        <h4>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
+      </h4>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, odit. Maxime distinctio ad aliquid sint placeat iusto libero magni ducimus deleniti accusamus veniam similique laudantium voluptatibus, sunt velit necessitatibus aperiam dolor reprehenderit beatae pariatur. Deserunt quo blanditiis minus rerum, quibusdam adipisci reiciendis ad quos natus, sequi dolorem optio quod et.</p>
         <Button
           className='button'
           text='Read Now'
