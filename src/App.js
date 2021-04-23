@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Navbar from './component/Navbar/index';
-import { Route , Link } from 'react-router-dom';
+import { Route} from 'react-router-dom';
 import BlogPage from './Pages/BlogPages/main/Index';
 import Business from './Pages/BlogPages/business';
 import Technology from './Pages/BlogPages/technology';
