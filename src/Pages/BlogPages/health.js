@@ -1,14 +1,47 @@
-import React from 'react'
-import {Link} from 'react-router-dom';
+import React,{useState,useEffect} from 'react'
+import NewsCard from '../../../component/NewsCard/NewsCard.component';
+import BeatLoader from "react-spinners/BeatLoader";
 
-const Health = () => {
+
+const override = {
+  display: 'block',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  margin: '0 auto',
+  borderColor: 'lightblue'
+}
+
+
+const Technology = (props) => {
+  const [ApiData, setApiData] = useState();
+  useEffect(() => {
+    const fetchData = async () => {
+      const urlData = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=${process.env.API_KEY}`)
+      const result = await urlData.json()
+      setApiData(result.articles);
+    }
+
+    fetchData()
+  }, [])
+
+
   return (
-    <div>
-      <Link to='/contact'>
-        sports
-      </Link>
+    <div className='NewsCardsContainer'>
+
+      {ApiData ?
+        ApiData.map(data => (
+          <NewsCard
+            image={data.urlToImage}
+            Title={data.title}
+            description={data.description}
+          />
+        ))
+        : <BeatLoader color={'black'} css={override} size={10} />
+      }
+
     </div>
   )
 }
 
-export default Health
+export default Technology;
