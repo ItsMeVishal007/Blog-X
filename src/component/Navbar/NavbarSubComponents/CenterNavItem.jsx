@@ -6,7 +6,7 @@ const NavLinks = () => {
     <div className='CenteredNavbar'>
       <div className='logoSection'>
         <NavLink  to='/'>
-        <h1>Blog-X</h1>
+        <h1>News-X</h1>
         </NavLink>
       </div>
       <ul className='C-N-ul'>

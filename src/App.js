@@ -9,8 +9,8 @@ import Sports from './Pages/BlogPages/Sports/Sports';
 import Health from './Pages/BlogPages/Health/Health';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
-import FilterData from './context/CreateContext'
-// import { connect } from 'react-redux';
+import FilterData from './context/CreateContext';
+// import { conndotenv.config()ect } from 'react-redux';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
 
   React.useEffect(() => {
     const fetchData = async () => {
-      const urlData = await fetch('http://newsapi.org/v2/top-headlines?q=ai&apiKey=1905ac9542f24645868281f04e1538b6')
+      const urlData = await fetch('http://newsapi.org/v2/top-headlines?q=ai&apiKey=2bb66c0392d24e739d1904c868f011a6')
       const result = await urlData.json()
       setApiData(result.articles);
     }
