@@ -3,10 +3,10 @@ import React from 'react';
 import Navbar from './component/Navbar/index';
 import { Route } from 'react-router-dom';
 import BlogPage from './Pages/BlogPages/main/Index';
-import Business from './Pages/BlogPages/business';
+import Business from './Pages/BlogPages/Buisness/Buisness';
 import Technology from './Pages/BlogPages/Technology/Technology'
 import Sports from './Pages/BlogPages/Sports/Sports';
-import Health from './Pages/BlogPages/health';
+import Health from './Pages/BlogPages/Health/Health';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import FilterData from './context/CreateContext'
