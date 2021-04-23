@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react'
 import NewsCard from '../../../component/NewsCard/NewsCard.component';
-import '../../../component/NewsCard/Newscard.style.css';
 import BeatLoader from "react-spinners/BeatLoader";
 
 
@@ -18,7 +17,7 @@ const Sports = (props) => {
   const [ApiData, setApiData] = React.useState();
   useEffect(() => {
     const fetchData = async () => {
-      const urlData = await fetch('http://newsapi.org/v2/top-headlines?q=ai&apiKey=1905ac9542f24645868281f04e1538b6')
+      const urlData = await fetch('https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=1905ac9542f24645868281f04e1538b6')
       const result = await urlData.json()
       setApiData(result.articles);
     }
