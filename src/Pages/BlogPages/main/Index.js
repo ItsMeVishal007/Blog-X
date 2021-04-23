@@ -1,7 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
+import { css } from "@emotion/react";
 import NewsCard from '../../../component/NewsCard/NewsCard.component';
 import './NewsCardsContainer.css';
+import BeatLoader from "react-spinners/BeatLoader";
+
+
+const override = {
+  display: 'block',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  margin: '0 auto',
+  borderColor: 'lightblue'
+}
+
 
 const BlogPages = (props) => {
   const [ApiData, setApiData] = React.useState();
@@ -30,7 +43,7 @@ const BlogPages = (props) => {
             description={data.description}
           />
         ))
-        : 'Loading...'
+        : <BeatLoader color={'black'} css={override} size={10} />
       }
     </div>
   )
