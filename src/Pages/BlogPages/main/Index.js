@@ -3,7 +3,7 @@ import NewsCard from '../../../component/NewsCard/NewsCard.component';
 import './NewsCardsContainer.css';
 import BeatLoader from "react-spinners/BeatLoader";
 import FilterData from '../../../context/CreateContext'
-import { searchbarData } from '../../../component/Navbar/NavbarSubComponents/Searchbar'
+// import { searchbarData } from '../../../component/Navbar/NavbarSubComponents/Searchbar'
 
 
 const override = {
@@ -19,12 +19,11 @@ const override = {
 const BlogPages = (props) => {
   const { ApiData, setApiData } = useContext(FilterData);
 
-  console.log('this data ' , searchbarData)
+  console.log('this data ' , ApiData)
 
   return (
     <div className='NewsCardsContainer'>
       {
-        searchbarData === '' ?
           ApiData ?
             ApiData.map(data => (
               <NewsCard
@@ -34,13 +33,6 @@ const BlogPages = (props) => {
               />
             ))
             : <BeatLoader color={'black'} css={override} size={10} />
-          : searchbarData.map(d => (
-            <NewsCard
-              image={d.urlToImage}
-              Title={d.title}
-              description={d.description}
-            />
-          ))
       }
 
 
