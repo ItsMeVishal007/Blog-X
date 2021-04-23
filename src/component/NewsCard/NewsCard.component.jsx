@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NewsCard.style.css';
-import Button from '../../component/Button/index'
+import Button from '../../component/Button/index';
 
 const NewsCard = ({ image, Title }) => {
   return (

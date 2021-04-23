@@ -8,14 +8,13 @@
   padding: 0;
   border-radius: 5px;
   cursor: pointer;
-  /* border: 2px solid red; */
 }
 .image{
   position: absolute;
 }
 .image img{
   width: 100%;
-  transform: scale(1.5)
+  transform: scale(1.8)
 }
 .otherCardstuff{
   backdrop-filter: blur(3px);
