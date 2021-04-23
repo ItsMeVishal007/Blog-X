@@ -9,7 +9,6 @@ import Sports from './Pages/BlogPages/sports';
 import Health from './Pages/BlogPages/health';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
-import Homepage from './Pages/HomePage/HomePage';
 
 
 
@@ -17,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Route exact path='/' component={Homepage} />
+      <Route exact path='/' component={BlogPage} />
       <Route exact path='/blog/technology' component={Technology} />
       <Route exact path='/blog/sports' component={Sports} />
       <Route exact path='/blog/health' component={Health} />
