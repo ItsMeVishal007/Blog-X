@@ -19,24 +19,21 @@ const override = {
 const BlogPages = (props) => {
   const { ApiData, setApiData } = useContext(FilterData);
 
-  console.log('this data ' , ApiData)
+  console.log('this data ', ApiData)
 
   return (
     <div className='NewsCardsContainer'>
       {
-          ApiData ?
-            ApiData.map(data => (
-              <NewsCard
-                image={data.urlToImage}
-                Title={data.title}
-                description={data.description}
-              />
-            ))
-            : <BeatLoader color={'black'} css={override} size={10} />
+        ApiData ?
+          ApiData.map(data => (
+            <NewsCard
+              image={data.urlToImage}
+              Title={data.title}
+              description={data.description}
+            />
+          ))
+          : <BeatLoader color={'black'} css={override} size={10} />
       }
-
-
-
 
     </div>
   )

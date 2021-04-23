@@ -24,7 +24,7 @@ function App() {
     }
 
     fetchData()
-  }, [])
+  }, [ApiData])
 
   return (
     <div className="App">
