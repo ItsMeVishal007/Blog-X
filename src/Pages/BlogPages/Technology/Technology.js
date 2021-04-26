@@ -17,7 +17,7 @@ const Technology = (props) => {
   const [ApiData, setApiData] = useState();
   useEffect(() => {
     const fetchData = async () => {
-      const urlData = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=${process.env.API_KEY}`)
+      const urlData = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=${process.env.REACT_APP_API_KEY}`)
       const result = await urlData.json()
       setApiData(result.articles);
     }

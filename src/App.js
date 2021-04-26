@@ -18,7 +18,7 @@ function App() {
 
   React.useEffect(() => {
     const fetchData = async () => {
-      const urlData = await fetch(`http://newsapi.org/v2/top-headlines?q=ai&apiKey=${process.env.API_KEY}`)
+      const urlData = await fetch(`http://newsapi.org/v2/top-headlines?q=ai&apiKey=${process.env.REACT_APP_API_KEY}`)
       const result = await urlData.json()
       setApiData(result.articles);
     }
