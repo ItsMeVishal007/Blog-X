@@ -30,7 +30,9 @@ function App() {
     <div className="App">
       {/* <span>{counter}</span>
       <button onClick={Add}>+</button>
-      <button onClick={Sub}>-</button> */}
+      <button onClick={Sub}>-</button> 
+      2bb66c0392d24e739d1904c868f011a6
+      */}
       <FilterData.Provider value={{ ApiData, setApiData }}>
         <Navbar />
         <Route exact path='/' component={BlogPage} />
