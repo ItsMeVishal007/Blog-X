@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useEffect} from 'react'
 import NewsCard from '../../../component/NewsCard/NewsCard.component';
 import BeatLoader from "react-spinners/BeatLoader";
 

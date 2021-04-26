@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react'
+import React, {useContext } from 'react'
 import NewsCard from '../../../component/NewsCard/NewsCard.component';
 import './NewsCardsContainer.css';
 import BeatLoader from "react-spinners/BeatLoader";
@@ -17,7 +17,7 @@ const override = {
 
 
 const BlogPages = (props) => {
-  const { ApiData, setApiData } = useContext(FilterData);
+  const { ApiData} = useContext(FilterData);
 
   console.log('this data ', ApiData)
 
